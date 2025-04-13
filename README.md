@@ -24,7 +24,9 @@ A Data-Free Framework for Solving Ordinary Differential Equations and Refining T
     ```
 
 ## Run
-1. Update the options in `src/NNODE/options.py`.
+1. Update the options in `src/NNODE/options.py`. 
+   
+   **NOTE: set `num_workers` to 0 if you are using Windows.**
 
 2. Run the training script.
     ```bash
