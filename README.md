@@ -42,3 +42,4 @@ A Data-Free Framework for Solving Ordinary Differential Equations and Refining T
     ```bash
     source scripts/convert.sh
     ```
+    More details will be available in the open source repository soon.

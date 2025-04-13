@@ -26,10 +26,9 @@ class Tester:
         self.opts = opts
 
         # checkpoint name
-        file_name = self.opts.checkpoint_name + "/weights_100.pth"
-        opts_name = self.opts.checkpoint_name + "/opt.json"
-        file_path = os.path.join(self.opts.log_dir, self.opts.problem_type, file_name)
-        opts_path = os.path.join(self.opts.log_dir, self.opts.problem_type, opts_name)
+        self.save_dir = os.path.join(self.opts.log_dir, self.opts.problem_type, self.opts.checkpoint_name)
+        file_path = os.path.join(self.save_dir, "weights_100.pth")
+        opts_path = os.path.join(self.save_dir, "opt.json")
 
         with open(opts_path, "r") as f:
             self.opts.__dict__.update(json.load(f))
