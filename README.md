@@ -15,7 +15,7 @@ A Data-Free Framework for Solving Ordinary Differential Equations and Refining T
     **NOTE: install gpu version of [PyTorch](https://pytorch.org/get-started/locally/) if needed.**
 
     ```bash
-    pip install matplotlib scipy tqdm tensorboard tensorboardX loguru
+    pip install matplotlib scipy loguru tqdm tensorboard tensorboardX
     ```
 
 3. Download the repository.
