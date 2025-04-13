@@ -2,4 +2,4 @@
 # use `source xx.sh` to run
 
 conda activate NNODE
-python3 src/NNODE/train.py
+python3 src/NNODE/test.py

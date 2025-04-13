@@ -41,7 +41,7 @@ class Options:
         self.parser.add_argument("--random_seed", type=int, default=3407)
 
         # optimization
-        self.parser.add_argument("--has_regression_loss", type=bool, default=True)
+        self.parser.add_argument("--has_regression_loss", type=bool, default=False)
         self.parser.add_argument("--only_regression_loss", type=bool, default=False)
         self.parser.add_argument("--lambda_f", type=float, default=1.0, help="weight of ode loss")
         self.parser.add_argument("--lambda_b", type=float, default=1.0, help="weight of boundary loss")
@@ -52,7 +52,7 @@ class Options:
         self.parser.add_argument("--num_epochs", type=int, default=100)
         self.parser.add_argument("--step_size", type=int, default=30)
         self.parser.add_argument("--learning_rate", type=float, default=1e-3)
-        self.parser.add_argument("--save_frequency", type=int, default=1)
+        self.parser.add_argument("--save_frequency", type=int, default=20)
 
     def parse(self):
         return self.parser.parse_args()
